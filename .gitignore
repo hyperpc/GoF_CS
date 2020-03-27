@@ -238,3 +238,4 @@ CreationalPattern/ch01_SimpleFactory/bin/Debug/netcoreapp3.1/runtimes/win/lib/ne
 /CreationalPattern/ch06_Singleton/obj/project.nuget.cache
 /StructuralPattern/ch07_Adapter/obj/project.nuget.cache
 /StructuralPattern/ch08_Bridge/obj/project.nuget.cache
+/.vs/GoF_CS/v16/*.suo
