@@ -230,6 +230,15 @@ CreationalPattern/ch01_SimpleFactory/bin/Debug/netcoreapp3.1/runtimes/win/lib/ne
 CreationalPattern/ch01_SimpleFactory/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
 CreationalPattern/ch01_SimpleFactory/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 CreationalPattern/ch01_SimpleFactory/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/CreationalPattern/ch01_SimpleFactory/obj/project.nuget.cache
+/CreationalPattern/ch02_Factory/obj/project.nuget.cache
+/CreationalPattern/ch03_AbstractFactory/obj/project.nuget.cache
+/CreationalPattern/ch04_Builder/obj/project.nuget.cache
+/CreationalPattern/ch05_Prototype/obj/project.nuget.cache
+/CreationalPattern/ch06_Singleton/obj/project.nuget.cache
+/StructuralPattern/ch07_Adapter/obj/project.nuget.cache
+/StructuralPattern/ch08_Bridge/obj/project.nuget.cache
+/.vs/GoF_CS/v16/*.suo
 StructuralPattern/ch09_Composite/obj/ch09_Composite.csproj.nuget.cache
 StructuralPattern/ch09_Composite/obj/ch09_Composite.csproj.nuget.dgspec.json
 StructuralPattern/ch09_Composite/obj/ch09_Composite.csproj.nuget.g.props
