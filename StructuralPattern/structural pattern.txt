@@ -36,8 +36,13 @@ Compose objects into tree structures to represent part-whole hierarchies. Compos
 装饰模式
 (Decorator)
 动态地给一个对象增加一些额外的职责。就扩展功能而言，装饰模式提供了一种比使用子类更加灵活的替代方案
+Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 3
 3
+透明装饰模式(Transparent)- 扩展的方法为private
+半透明装饰模式(Semi-transparent)- 扩展的方法为public，并且消费者要声明具体装饰类
+
+
 
 外观模式
 (Facade)
