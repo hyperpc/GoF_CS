@@ -17,14 +17,14 @@ namespace ch09_Composite
                 var girlImg = new Classic.ImageFile("girl.jpg");
                 var boyImg = new Classic.ImageFile("boy.gif");
                 var englishBook = new Classic.TextFile("english.txt");
-                var mathBook = new Classic.TextFile("mathmatics.txt");
-                var lessonVedio = new Classic.VideoFile("lesson01.mp4");
+                var mathBook = new Classic.TextFile("mathematics.txt");
+                var lessonVideo = new Classic.VideoFile("lesson01.mp4");
 
                 imgFolder.Add(girlImg);
                 imgFolder.Add(boyImg);
                 txtFolder.Add(englishBook);
                 txtFolder.Add(mathBook);
-                mvFolder.Add(lessonVedio);
+                mvFolder.Add(lessonVideo);
 
                 rootFolder.Add(imgFolder);
                 rootFolder.Add(txtFolder);
@@ -35,6 +35,7 @@ namespace ch09_Composite
             }
             // safe composite
             {
+                /*
                 var rootFolder = new Safe.Folder("MyFiles");
                 var imgFolder = new Safe.Folder("Images");
                 var txtFolder = new Safe.Folder("Text");
@@ -43,21 +44,34 @@ namespace ch09_Composite
                 var girlImg = new Safe.ImageFile("girl.jpg");
                 var boyImg = new Safe.ImageFile("boy.gif");
                 var englishBook = new Safe.TextFile("english.txt");
-                var mathBook = new Safe.TextFile("mathmatics.txt");
-                var lessonVedio = new Safe.VideoFile("lesson01.mp4");
+                var mathBook = new Safe.TextFile("mathematics.txt");
+                var lessonVideo = new Safe.VideoFile("lesson01.mp4");
 
                 imgFolder.Add(girlImg);
                 imgFolder.Add(boyImg);
                 txtFolder.Add(englishBook);
                 txtFolder.Add(mathBook);
-                mvFolder.Add(lessonVedio);
+                mvFolder.Add(lessonVideo);
 
                 rootFolder.Add(imgFolder);
                 rootFolder.Add(txtFolder);
                 rootFolder.Add(mvFolder);
 
                 rootFolder.KillVirus();
+                */
             }
+
+            // Exercise 1. Classic
+            //  OfficeStructure: OAOffice(-EduOffice, -AdminOffice, -List<OAOffice>, abstract void +PrintOrgOffice())
+            //   Headquarters - BeijingHQ (SichuanBranch, override +PrintOrgOffice())
+            //   SichuanBranch (ChengduBranch, MianyangBranch, override +PrintOrgOffice())
+            //   ChengduBranch(override +PrintOrgOffice())
+            //   MianyangBranch(override +PrintOrgOffice())
+
+            // Exercise 2. Safe
+            // UIControll: UICtrl(abstract void +Display())
+            //  UnitCtrl: Button, Textbox(override +Display())
+            //  ContCtrl: Form, Panel(-List<UICtrl>, void Add(UICtrl), void Remove(UICtrl), UICtrl GetChild(i), override void +Display())
             
             Console.ReadKey();
         }
