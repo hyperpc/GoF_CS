@@ -2,7 +2,7 @@
 using System;
 using System.Configuration;
 //dotnet add package System.Configuration.ConfigurationManager --version 4.7.0
-namespace ch10_Facade
+namespace ch11_Facade
 {
     class Program
     {
@@ -19,7 +19,7 @@ namespace ch10_Facade
             // 2. Abstract Facade
             {
                 var facadeStr = ConfigurationManager.AppSettings["facade"];
-                var facade =(EncryptExt.AbstractEncryptFacade)Assembly.Load("ch10_Facade").CreateInstance(facadeStr);
+                var facade =(EncryptExt.AbstractEncryptFacade)Assembly.Load("ch11_Facade").CreateInstance(facadeStr);
                 facade.FileEncrypt("src.txt","des.txt");
             }
 

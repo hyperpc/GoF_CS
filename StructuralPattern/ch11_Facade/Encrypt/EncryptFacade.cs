@@ -1,4 +1,4 @@
-namespace ch10_Facade.Encrypt
+namespace ch11_Facade.Encrypt
 {
     public class EncryptFacade
     {

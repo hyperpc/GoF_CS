@@ -1,5 +1,5 @@
 using System.Text;
-namespace ch10_Facade.EncryptExt
+namespace ch11_Facade.EncryptExt
 {
     public class CipherMachine
     {

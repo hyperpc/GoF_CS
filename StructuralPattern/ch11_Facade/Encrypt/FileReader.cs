@@ -1,6 +1,6 @@
 using System.Text;
 using System.IO;
-namespace ch10_Facade.Encrypt
+namespace ch11_Facade.Encrypt
 {
     public class FileReader
     {
