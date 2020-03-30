@@ -31,7 +31,7 @@ namespace ch10_Facade.EncryptExt
                         temp+=26;
                     }
                 }
-                es+=((char)temp).ToString();
+                es.Append(((char)temp).ToString());
             }
 
             System.Console.WriteLine(es);
