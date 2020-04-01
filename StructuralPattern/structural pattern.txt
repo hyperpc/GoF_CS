@@ -51,14 +51,34 @@ Provide a unified interface to a set of interfaces in a subsystem. Facade define
 迪米特法则
 抽象外观类
 
-享元模式
+
+
+享元模式/轻量级模式
 (Flyweight)
 运用共享技术有效地支持大量细粒度对象的复用
+Using sharing to support large numbers of fine-grained objects efficiently
 4
 1
+共享的关键：区分了内部状态(intrinsic state)和外部状态(extrinsic state)
+单纯享元模式：所有的具体享元类都是可以共享的，不存在非共享具体享元类。它们内部状态相同，可以共享，而外部状态一般不同，由客户端提供和维护。
+复合享元模式：复合享元类本身不能共享，但是其中包含的每个单纯享元类可以共享。它们具有相同的外部状态，而内部状态一般不同。
+其中用到了工厂模式和单例模式
+
+
 
 代理模式
 (Proxy)
 给某一个对象提供一个代理或占位符，并由代理对象来控制对原对象的访问
+Provide a surrogate or placeholder for another object to control access to it.
 3
 4
+根据目的和实现方式不同，分类：
+远程代理(Remote Proxy)/大使(Ambassador)：为一个位于不同地址空间的对象提供一个本地的代理对象，这个不同的地址空间可以在同一台主机中，也可以在另一台主机中。
+        它封装了底层网络通信和对远程对象的调用，其实现较为复杂。
+虚拟代理(Virtual Proxy)/：如果需要创建一个资源消耗较大的对象(网络IO或系统资源)，先创建一个小号较小的代理对象来表示，真实对象只在需要的时候才会被真正创建。
+保护代理(Protect Proxy)：控制对一个对象的访问，可以给不同的用户提供不同级别的权限。
+缓冲代理(Cache Proxy)：为某一个目标操作的结果提供临时的存储空间，以便多个客户端可以共享这些结果。
+        Microsoft.Extensions.Caching.Memory
+        Microsoft.Extensions.Caching.SqlServer        
+智能引用代理(Smart Reference Proxy)：当一个对象被引用时，提供一些额外的操作，例如将对象被调用的次数记录下来。
+
