@@ -496,3 +496,4 @@ BehavioralPattern/ch15_Command/obj/Debug/netcoreapp3.1/ch15_Command.pdb
 /.vs/GoF_CS/v15
 /.vs/GoF_CS/v15/Server
 /.vs/GoF_CS/v15/Server/sqlite3
+.vscode/tasks.json
