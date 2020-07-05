@@ -516,3 +516,9 @@ ch16_Interpreter.csproj.nuget.g.props
 ch16_Interpreter.csproj.nuget.g.targets
 project.assets.json
 project.nuget.cache
+/BehavioralPattern/ch14_ResponsibilityChain/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+/BehavioralPattern/ch15_Command/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+/BehavioralPattern/ch16_Interpreter/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+/StructuralPattern/ch11_Facade/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+/StructuralPattern/ch12_Flyweight/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+/StructuralPattern/ch13_Proxy/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
