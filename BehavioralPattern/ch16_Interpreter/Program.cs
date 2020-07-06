@@ -24,7 +24,20 @@ namespace ch16_Interpreter
                 System.Console.WriteLine(outString);
             }
 
-            // 
+            // Calculator
+            // 1. abstract AbstractNode{abstract string Interpret();}
+            // 2. CalculatorAction : AbstractNode{CalculatorAction(string operator); override Interpret(){}}
+            //    MultipleAction : CalculatorAction{override Interpret(){ * }}
+            //    DivideAction : CalculatorAction{override Interpret(){ /}}
+            //    ModeAction : CalculatorAction{override Interpret(){ %}}
+            // 3. SentenceNode : AbstractNode{SentenceNode(int num1, int num2, CalculatorAction action); override Interpret(){}}
+            // 4. InstructionHandler{ -AbstractNode; +Handle(string instruction){}}
+
+            // BooleenOperator
+
+            // DBSync
+            // COPY VIEW FROM srcDB TO DesDB
+            // MOVE TABLE FROM Student FROM srcDB TO desDB
 
 
             Console.ReadKey();
