@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Reflection;
 
+//dotnet add package System.Configuration.ConfigurationManager --version 4.7.0
 namespace ch22_Strategy
 {
     class Program
